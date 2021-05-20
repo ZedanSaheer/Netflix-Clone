@@ -1,0 +1,619 @@
+:root {
+    --primary-color: #e50914
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0
+}
+
+::after, ::before {
+    box-sizing: border-box
+}
+
+body {
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+    background-image: url(netflix-background-9.jpg)
+}
+
+body::after {
+    content: "";
+    background-color: rgba(0, 0, 0, .4);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    box-shadow: inset 0 0 500px #000
+}
+
+div {
+    overflow: hidden
+}
+
+#logo {
+    margin-top: 23px;
+    margin-left: 48px;
+    height: 50px;
+    width: 160px
+}
+
+header {
+    display: flex
+}
+
+#signin {
+    font-size: 15px;
+    border-radius: 3px;
+    color: #fff;
+    border: none;
+    height: 35px;
+    width: 75px;
+    background-color: var(--primary-color)
+}
+
+#languagehome {
+    color: #fff;
+    height: 35px;
+    width: 95px;
+    margin-right: 10px;
+    background: 0 0;
+    outline-style: none;
+    outline: 0
+}
+
+.head {
+    flex: 1
+}
+
+.twobutton {
+    flex: 1;
+    margin-top: 20px;
+    margin-right: 30px;
+    position: absolute;
+    left: 83vw
+}
+
+#landingpage {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 88vh;
+    flex-direction: column
+}
+
+.homediv {
+    padding: 30px;
+    margin: 20px;
+    width: 50vw;
+    text-align: center
+}
+
+h1 {
+    font-size: 55px
+}
+
+h2 {
+    font-weight: 20;
+    margin-top: 10px
+}
+
+.searchhomes {
+    margin: 10px
+}
+
+.searchhome {
+    display: flex;
+    margin-top: 10px
+}
+
+#email {
+    height: 70px;
+    width: 30vw
+}
+
+#getstarted {
+    position: relative;
+    top: .5vh;
+    right: .3vw;
+    font-weight: 500;
+    font-size: 25px;
+    color: #fff;
+    border: none;
+    height: 70px;
+    width: 15vw;
+    background-color: var(--primary-color);
+    transition: .3s
+}
+
+#getstarted:hover {
+    background-color: #940106
+}
+
+.fas fa-chevron-right {
+    color: #ddd;
+    font-weight: 100
+}
+
+#restpages {
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    gap: 10px silver;
+    background-color: #000;
+    overflow: hidden
+}
+
+.contentone {
+    border-top: 8px solid #222;
+    display: inline-grid;
+    position: relative;
+    grid-template-columns: 40% 60%;
+    height: 80vh
+}
+
+.contentone {
+    border-top: 8px solid #222
+}
+
+.contentone.img {
+    float: right
+}
+
+.contentone img {
+    max-width: 100%;
+    height: auto;
+    position: relative;
+    z-index: 1;
+    bottom: 2vh;
+    left: 10vw
+}
+
+#vidone {
+    height: 40vh;
+    width: 45vw;
+    position: absolute;
+    top: 11vh;
+    left: 48vw
+}
+
+#imgone {
+    width: 70vw
+}
+
+.textone {
+    position: relative;
+    top: 20vh;
+    padding: 30px;
+    left: 5vw
+}
+
+h1 {
+    margin-bottom: 20px
+}
+
+.texttwo {
+    position: relative;
+    top: 20vh;
+    left: 5vw
+}
+
+h3 {
+    font-size: 2rem;
+    position: relative;
+    left: -3vw;
+}
+
+.texttwo p {
+    margin-top: 15px;
+    margin-left: 40px;
+}
+
+#imgtwo {
+    top: 0;
+    left: 0
+}
+
+.imgthree {
+    padding: 20px
+}
+
+#imgthree {
+    height: 60vh;
+    width: 40vw;
+    position: absolute;
+    bottom: 10vh;
+    left: 50vw
+}
+
+#vidtwo {
+    height: 30vh;
+    width: 25vw;
+    position: relative;
+    top: 10vh;
+    left: 16vw
+}
+
+.textthree {
+    position: relative;
+    top: 30vh;
+    padding: 20px;
+    left: 3vw
+}
+
+.textfour {
+    position: relative;
+    top: 20vh;
+    left: 3vw;
+    padding: 40px
+}
+
+.contenttwo {
+    border-top: 8px solid #222;
+    padding: 40px;
+    height: 100%
+}
+
+h3 {
+    font-size: 40px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 10px
+}
+
+.accordion {
+    margin: 30px auto;
+    width: 50vw
+}
+
+button.accordionbt {
+    background-color: #303030;
+    height: 10vh;
+    font-size: 1.5rem;
+    color: #fff;
+    -webkit-font-smoothing: auto;
+    padding-left: 10px;
+    text-align: left;
+    width: 100%;
+    margin-top: 7px;
+    border: none;
+    text-transform: capitalize;
+    cursor: pointer
+}
+
+.accordionbt::after {
+    position: absolute;
+    content: "\002B";
+    right: 26vw;
+    color: #fff;
+    float: right;
+    font-size: 30px
+}
+
+.accordioncontent {
+    border-top: 1px solid #000;
+    background-color: #303030;
+    padding: 20px;
+    display: none;
+    transition: .5s ease-in
+}
+
+.acchhomes {
+    position: relative;
+    top: 5vh;
+    left: 25vw
+}
+
+.acchomes {
+    top: 5vh;
+    position: relative;
+    left: 20vw
+}
+
+#emailacc {
+    height: 70px;
+    width: 35vw;
+    margin-bottom: 40px
+}
+
+.contentthree {
+    font-size: 14px;
+    border-top: 8px solid #222;
+    padding: 30px;
+    color: #5b6671;
+    font-weight: 300;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center
+}
+
+.boxthree {
+    width: 60vw
+}
+
+.pthree {
+    font-size: 15px;
+    position: relative;
+    width: 100%;
+    text-align: left;
+    margin-top: 20px;
+    margin-bottom: 20px
+}
+
+.links {
+    position: relative;
+    right: 4vw
+}
+
+.links ul {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr)
+}
+
+.links ul li {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 10px 40px
+}
+
+.links ul li a {
+    text-decoration: none;
+    list-style: none;
+    color: #5b6671
+}
+
+#footerlang {
+    position: relative;
+    right: 27vw;
+    margin: 40px;
+    color: #fff;
+    height: 55px;
+    width: 125px;
+    margin-right: 10px;
+    background: 0 0;
+    outline-style: none;
+    outline: 0
+}
+
+.footerf {
+    position: relative;
+    right: 27.5vw
+}
+
+@media screen and (max-width:510px) {
+    #logo {
+        width: 24vw;
+        height: 6vh
+    }
+    #languagehome {
+        margin-right: 0
+    }
+    .twobutton {
+        padding-top: 2vh;
+        position: relative;
+        top: 2vh;
+        margin-top: 0;
+        position: relative;
+        left: 0vw;
+        display: inline-block;
+        margin-right: 0;
+    }
+    #signin {
+        position: relative;
+        height: 5vh;
+        width: 12vw;
+        font-size: 10px;
+        width:20vw;
+    }
+    #landingpage {
+        height: 70vh
+    }
+    #languagehome {
+        height: 5vh;
+        width:28vw;
+    }
+    .homediv {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+    h1 {
+        font-size: 1.5rem;
+    }
+    h2 {
+        font-size: 1rem;
+    }
+    .searchhomes p {
+        text-align: center;
+        padding: 0;
+        margin: 2vh;
+        font-size: .99rem;
+    }
+    .searchhome {
+        display: block;
+        width: 100%
+    }
+    #email {
+        position: relative;
+        left: 5vw;
+        height: 8vh;
+        width: 90%;
+    }
+    #getstarted {
+        margin-top: 3vh;
+        position: relative;
+        left: 25vw;
+        font-size: 1rem;
+        height: 9vh;
+        width: 50vw
+    }
+    #restpage {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr)
+    }
+    .contentone {
+        display: grid;
+        grid-template-columns: none;
+        grid-template-rows: 40% 60%
+    }
+    #pone {
+        text-align: center;
+        height: 10vh;
+        margin: 1px 40px;
+        font-size: 1rem
+    }
+    .textone {
+        padding: 0;
+        margin-top: 20px;
+        position: relative;
+        top: 0;
+        left: 0;
+        text-align: center
+    }
+    #imgone {
+        width: 100%
+    }
+    #imgones {
+        width: 70vw;
+        position: relative;
+        left: 15vw
+    }
+    #vidone {
+        height: 130px;
+        width: 64vw;
+        position: absolute;
+        top: 39vh;
+        left: 19vw
+    }
+    #imgtwo {
+        height: 50vh;
+        width: 70vh;
+        position: relative;
+        top: 25vh;
+        left: 3vw
+    }
+    .texttwo {
+        position: absolute;
+        top: 0
+    }
+    h3 {
+        font-size: 1.8rem
+    }
+    #ptwo {
+        margin-left: 0;
+        text-align: center
+    }
+    .textthree {
+        position: absolute;
+        top: 2vh;
+        text-align: center;
+        padding-bottom: 0
+    }
+    .imgthree {
+        position: relative;
+        top: 20vh;
+        padding: 0;
+        height: 60vh
+    }
+    #imgthree {
+        position: relative;
+        left: 6vw;
+        top: 3vh;
+        height: 58vh;
+        width: 90vw
+    }
+    #vidtwo {
+        position: absolute;
+        top: 7vh;
+        left: 22vw;
+        width: 58vw
+    }
+    .textfour {
+        position: absolute;
+        top: 0
+    }
+    #imgfour {
+        position: absolute;
+        left: 16vw;
+        height: 40vh;
+        width: 70vw
+    }
+    .contenttwo {
+        margin: 10px 0;
+        padding: 20px 0
+    }
+    .accordion {
+        position: relative;
+        top: 5vh;
+        margin: 0;
+        width: 100%
+    }
+    .accordionbt::after {
+        justify-content: center;
+        width: 20%;
+        position: relative;
+        left: 10vw
+    }
+    .accordioncontent {
+        transition: .5s
+    }
+    .acchhomes {
+        margin-top: 30px;
+        text-align: center;
+        padding: 30px;
+        position: relative;
+        top: 0;
+        bottom: 4vh;
+        left: 0
+    }
+    .acchomes {
+        position: relative;
+        top: 0;
+        left: 0;
+        display: block
+    }
+    #emailacc {
+        width: 100%
+    }
+    .contentthree {
+        margin: 0
+    }
+    .links ul {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr)
+    }
+    .links ul a {
+        margin: 5px 0
+    }
+}
+
+@media screen and (max-width:365px) {
+    #vidone{
+        position: absolute;
+        left: 21vw;
+        top: 32vh;
+        width: 55vw;
+    }
+    #imgtwo{
+        height: 40vh;
+    }
+    #imgthree{
+        position: relative;
+        top: 10vh;
+        height: 40vh;
+    }
+    #imgfour{
+        position: relative;
+        top: 40vh;
+        left: 6vw;
+        height: 40vh;
+        width: 90vw;
+    }
+}
