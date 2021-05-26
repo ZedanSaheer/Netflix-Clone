@@ -38,7 +38,7 @@ div {
 #logo {
     margin-top: 23px;
     margin-left: 48px;
-    height: 50px;
+    height: 40px;
     width: 160px
 }
 
@@ -388,8 +388,10 @@ button.accordionbt {
 
 @media screen and (max-width:510px) {
     #logo {
+        position: relative;
+        top: 2vh;
         width: 24vw;
-        height: 6vh
+        height: 3vh
     }
     #languagehome {
         margin-right: 0
@@ -409,14 +411,14 @@ button.accordionbt {
         height: 5vh;
         width: 12vw;
         font-size: 10px;
-        width:20vw;
+        width: 20vw;
     }
     #landingpage {
         height: 70vh
     }
     #languagehome {
         height: 5vh;
-        width:28vw;
+        width: 28vw;
     }
     .homediv {
         margin: 0;
@@ -461,7 +463,8 @@ button.accordionbt {
     .contentone {
         display: grid;
         grid-template-columns: none;
-        grid-template-rows: 40% 60%
+        grid-template-rows: 40% 60%;
+        height: 60vh;
     }
     #pone {
         text-align: center;
@@ -481,135 +484,158 @@ button.accordionbt {
         width: 100%
     }
     #imgones {
-        width: 70vw;
-        position: relative;
-        left: 15vw
-    }
-    #vidone {
-        height: 130px;
-        width: 64vw;
-        position: absolute;
-        top: 39vh;
-        left: 19vw
-    }
-    #imgtwo {
-        height: 50vh;
-        width: 70vh;
-        position: relative;
-        top: 25vh;
-        left: 3vw
-    }
-    .texttwo {
-        position: absolute;
-        top: 0
-    }
-    h3 {
-        font-size: 1.8rem
-    }
-    #ptwo {
-        margin-left: 0;
-        text-align: center
-    }
-    .textthree {
-        position: absolute;
-        top: 2vh;
-        text-align: center;
-        padding-bottom: 0
-    }
-    .imgthree {
-        position: relative;
-        top: 20vh;
-        padding: 0;
-        height: 60vh
-    }
-    #imgthree {
+        width: 89vw;
         position: relative;
         left: 6vw;
-        top: 3vh;
-        height: 58vh;
-        width: 90vw
-    }
-    #vidtwo {
-        position: absolute;
-        top: 7vh;
-        left: 22vw;
-        width: 58vw
-    }
-    .textfour {
-        position: absolute;
-        top: 0
-    }
-    #imgfour {
-        position: absolute;
-        left: 16vw;
-        height: 40vh;
-        width: 70vw
-    }
-    .contenttwo {
-        margin: 10px 0;
-        padding: 20px 0
-    }
-    .accordion {
-        position: relative;
-        top: 5vh;
-        margin: 0;
-        width: 100%
-    }
-    .accordionbt::after {
-        justify-content: center;
-        width: 20%;
-        position: relative;
-        left: 10vw
-    }
-    .accordioncontent {
-        transition: .5s
-    }
-    .acchhomes {
-        margin-top: 30px;
-        text-align: center;
-        padding: 30px;
-        position: relative;
-        top: 0;
-        bottom: 4vh;
-        left: 0
-    }
-    .acchomes {
-        position: relative;
-        top: 0;
-        left: 0;
-        display: block
-    }
-    #emailacc {
-        width: 100%
-    }
-    .contentthree {
-        margin: 0
-    }
-    .links ul {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr)
-    }
-    .links ul a {
-        margin: 5px 0
     }
 }
 
+#vidone {
+    height: 17vh;
+    width: 68vw;
+    position: absolute;
+    top: 28vh;
+    left: 15vw;
+}
+
+#imgtwo {
+    height: 37vh;
+    width: 124vw;
+    position: relative;
+    top: 19vh;
+    left: 1vw;
+}
+
+.texttwo {
+    position: absolute;
+    top: 0
+}
+
+h3 {
+    font-size: 1.8rem
+}
+
+#ptwo {
+    margin-left: 0;
+    text-align: center
+}
+
+.textthree {
+    position: absolute;
+    top: 2vh;
+    text-align: center;
+    padding-bottom: 0
+}
+
+.imgthree {
+    position: relative;
+    top: 20vh;
+    padding: 0;
+    height: 60vh
+}
+
+#imgthree {
+    position: relative;
+    left: -1vw;
+    top: 1vh;
+    height: 38vh;
+    width: 100vw;
+}
+
+#vidtwo {
+    position: absolute;
+    top: -2vh;
+    left: 17vw;
+    width: 64vw;
+}
+
+.textfour {
+    position: absolute;
+    top: 0
+}
+
+#imgfour {
+    position: absolute;
+    left: -1vw;
+    height: 35vh;
+    width: 100vw;
+}
+
+.contenttwo {
+    margin: 10px 0;
+    padding: 20px 0
+}
+
+.accordion {
+    position: relative;
+    top: 5vh;
+    margin: 0;
+    width: 100%
+}
+
+.accordionbt::after {
+    justify-content: center;
+    width: 20%;
+    position: relative;
+    left: 10vw
+}
+
+.accordioncontent {
+    transition: .5s
+}
+
+.acchhomes {
+    margin-top: 30px;
+    text-align: center;
+    padding: 30px;
+    position: relative;
+    top: 0;
+    bottom: 4vh;
+    left: 0
+}
+
+.acchomes {
+    position: relative;
+    top: 0;
+    left: 0;
+    display: block
+}
+
+#emailacc {
+    width: 100%
+}
+
+.contentthree {
+    margin: 0
+}
+
+.links ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr)
+}
+
+.links ul a {
+    margin: 5px 0
+}
+
+}
+
 @media screen and (max-width:365px) {
-    #vidone{
+    #vidone {
         position: absolute;
         left: 21vw;
         top: 32vh;
         width: 55vw;
     }
-    #imgtwo{
+    #imgtwo {
         height: 40vh;
     }
-    #imgthree{
+    #imgthree {
         position: relative;
         top: 10vh;
         height: 40vh;
     }
-    #imgfour{
+    #imgfour {
         position: relative;
         top: 40vh;
         left: 6vw;
