@@ -164,19 +164,18 @@ h2 {
 }
 
 .contentone img {
-    max-width: 100%;
+    max-width: 113%;
     height: auto;
     position: relative;
     z-index: 1;
     bottom: 2vh;
-    left: -1vw;
+    left: 1vw;
 }
-
-#vidone {
-    width: 68vw;
+#vidone{
+width: 44vw;
     position: absolute;
     top: 11vh;
-    left: 32vw;
+    left: 46vw;
 }
 
 #imgone {
@@ -488,11 +487,11 @@ button.accordionbt {
         position: relative;
         left: 6vw;
     }
-
-#vidone {
+    
+  #vidone {
     width: 68vw;
     position: absolute;
-    top: 17vh;
+    top: 27vh;
     left: 15vw;
 }
 
