@@ -169,15 +169,14 @@ h2 {
     position: relative;
     z-index: 1;
     bottom: 2vh;
-    left: 10vw
+    left: -1vw;
 }
 
 #vidone {
-    height: 40vh;
-    width: 45vw;
+    width: 68vw;
     position: absolute;
-    top: 35vh;
-    left: 48vw
+    top: 11vh;
+    left: 32vw;
 }
 
 #imgone {
@@ -489,7 +488,6 @@ button.accordionbt {
         position: relative;
         left: 6vw;
     }
-}
 
 #vidone {
     width: 68vw;
