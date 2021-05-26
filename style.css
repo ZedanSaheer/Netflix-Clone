@@ -573,12 +573,24 @@ h3 {
     width: 100%
 }
 
+button.accordionbt{
+    height: 8.5vh;
+}
+
 .accordionbt::after {
     justify-content: center;
     width: 20%;
     position: relative;
     left: 10vw
 }
+.two{
+    padding-top: 3vh;
+}
+
+.two::after{
+    bottom:3.6vh;
+}
+
 
 .accordioncontent {
     transition: .5s
