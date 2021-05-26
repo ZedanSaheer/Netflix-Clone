@@ -388,10 +388,11 @@ button.accordionbt {
 
 @media screen and (max-width:510px) {
     #logo {
-        position: relative;
-        top: 2vh;
-        width: 24vw;
-        height: 3vh
+    position: relative;
+    top: 0vh;
+    left: -5vw;
+    width: 23vw;
+    height: 5vh;
     }
     #languagehome {
         margin-right: 0
@@ -491,10 +492,9 @@ button.accordionbt {
 }
 
 #vidone {
-    height: 17vh;
     width: 68vw;
     position: absolute;
-    top: 28vh;
+    top: 17vh;
     left: 15vw;
 }
 
