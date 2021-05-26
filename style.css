@@ -176,7 +176,7 @@ h2 {
     height: 40vh;
     width: 45vw;
     position: absolute;
-    top: 11vh;
+    top: 35vh;
     left: 48vw
 }
 
@@ -388,10 +388,8 @@ button.accordionbt {
 
 @media screen and (max-width:510px) {
     #logo {
-        width: 22vw;
-    height: 3vh;
-    position: relative;
-    top: 2vh;
+        width: 24vw;
+        height: 6vh
     }
     #languagehome {
         margin-right: 0
@@ -461,11 +459,9 @@ button.accordionbt {
         grid-template-columns: repeat(4, 1fr)
     }
     .contentone {
-    position: absolute;
-    bottom: 12vh;
-    left: 4vw;
-    height: 40vh;
-    width: 112vw;
+        display: grid;
+        grid-template-columns: none;
+        grid-template-rows: 40% 60%
     }
     #pone {
         text-align: center;
@@ -490,18 +486,18 @@ button.accordionbt {
         left: 15vw
     }
     #vidone {
-     height: 130px;
-    width: 64vw;
-    position: absolute;
-    top: 25vh;
-    left: 19vw;
+        height: 130px;
+        width: 64vw;
+        position: absolute;
+        top: 39vh;
+        left: 19vw
     }
     #imgtwo {
-    height: 38vh;
-    width: 100vw;
-    position: relative;
-    top: 15vh;
-    left: 0vw;
+        height: 50vh;
+        width: 70vh;
+        position: relative;
+        top: 25vh;
+        left: 3vw
     }
     .texttwo {
         position: absolute;
@@ -526,34 +522,29 @@ button.accordionbt {
         padding: 0;
         height: 60vh
     }
-    
     #imgthree {
-    position: relative;
-    left: 3vw;
-    top: -3vh;
-    height: 39vh;
-    width: 99vw;
+        position: relative;
+        left: 6vw;
+        top: 3vh;
+        height: 58vh;
+        width: 90vw
     }
-    
     #vidtwo {
-    position: absolute;
-    top: -5vh;
-    left: 19vw;
-    width: 63vw;
-    height: 29vh;
-}
-    
+        position: absolute;
+        top: 7vh;
+        left: 22vw;
+        width: 58vw
+    }
     .textfour {
         position: absolute;
         top: 0
     }
     #imgfour {
-     position: absolute;
-    bottom: 4vh;
-    left: 14vw;
-    height: 30vh;
-    width: 75vw;
-}
+        position: absolute;
+        left: 16vw;
+        height: 40vh;
+        width: 70vw
+    }
     .contenttwo {
         margin: 10px 0;
         padding: 20px 0
