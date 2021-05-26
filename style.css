@@ -164,18 +164,19 @@ h2 {
 }
 
 .contentone img {
-    max-width: 113%;
+    max-width: 105%;
     height: auto;
     position: relative;
     z-index: 1;
     bottom: 2vh;
-    left: 1vw;
+    left: 10vw;
 }
-#vidone{
-width: 44vw;
+
+#vidone {
+    width: 36vw;
     position: absolute;
     top: 11vh;
-    left: 46vw;
+    left: 53vw;
 }
 
 #imgone {
